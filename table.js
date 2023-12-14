@@ -133,8 +133,8 @@ function drop(event) {
     else { endX = coords[0]; endY = coords[1]; }
 
     // set size of the flags to be correct
-    node.style.width="35px";
-    node.style.height="35px";
+    node.style.width="30px";
+    node.style.height="30px";
 
     // attach the flag to the cell
     event.currentTarget.appendChild(node);
