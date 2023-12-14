@@ -1,0 +1,96 @@
+td {
+    border-style:solid;
+    border-width:1px;
+    width:35px;
+    height:35px;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+table {
+    border-collapse:collapse;
+    table-layout: fixed;
+    margin: 0 auto;
+    
+}
+
+.start {
+    background-image:url("icons/start.png");
+    background-color:white;
+}
+
+.end {
+    background-image:url("icons/end.png");
+    background-color:white;
+}
+
+.wall {
+    background-color: black;
+}
+
+.normal {
+    background-color: white;
+}
+
+.menuLabel {
+    font-size: 35px;
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+}
+
+.menuImage {
+    height:50px;
+    width:50px;
+}
+
+.menuPanel {
+    float:left;
+    width:auto;
+    padding:5px;
+    margin:20px;
+}
+
+.menuSection {
+    background-color:skyblue;
+    height:200px;
+    margin:20px;
+}
+
+body {
+    padding:20px;
+    background-color:paleturquoise;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.animateButton {
+    position: relative;
+    top: 30%;
+    padding: 15px;
+    border-style: outset;
+    border-width: 5px;
+    font-size: 40px;
+    
+}
+
+.algorithmSelector {
+    font-size: 20px;
+}
+
+.clearBtn {
+    font-size: 20px;
+    margin: 3px;
+}
+
+.updateBtn {
+    font-size: 20px;
+    margin: 3px;
+}

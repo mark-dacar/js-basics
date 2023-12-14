@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="background-color: lightblue;">
+        <h1 style="margin:0 auto;">Pathfinding Visualizer</h1>
+        <h2>Developed by Mark Dacar</h2>
+    </div>
+    
+
+    <!-- Setting up the menu for the program -->
+    <div class="menuSection">
+
+    <!-- Changing the table size -->
+    <div class="menuPanel">
+        <label class="menuLabel">Select Table Size</label><br><br>
+        <label style="font-size:20px;">Table Height: <input type="text" id="tableHeight" style="font-size:20px; width:75px;" value="20"> <br></label>
+        <label style="font-size:20px; white-space: pre;">Table Width:  <input type="text" id="tableWidth" style="font-size:20px; width:75px; margin-left:1px;" value="30"> <br></label>
+        <button class="updateBtn" onclick=changeTable()>Update Table</button> <br>
+    </div>
+    
+
+    <!-- Selecting the search algorithm -->
+    <div class="menuPanel">
+        <label class="menuLabel">Select Algorithm</label><br><br>
+        <select name="algorithms" id="algorithms" class="algorithmSelector">
+            <option value="1">Breadth First Search</option>
+            <option value="2">Depth First Search</option>
+            <option value="3">Bidirectional Breadth First Search</option>
+            <option value="4">Greedy Best First Search</option>
+            <option value="5">Dijkstra's Algorithm</option>
+            <option value="6">A* Algorithm</option>
+        </select>
+    </div>
+    
+
+    <!-- Define document tools -->
+    <div class="menuPanel">
+        <label class="menuLabel">Drag Flags</label><br><br>
+        <img id="startPoint" class="menuImage" alt="Start Flag" title="Start Flag" src="icons/start.png" draggable="true" ondragstart="drag(event)" width="25" height="25">
+        <img id="endPoint" class="menuImage" alt="End Flag" title="End Flag" src="icons/end.png" draggable="true" ondragstart="drag(event)" width="25" height="25">
+    </div>
+    
+    <div class="menuPanel">
+        <label class="menuLabel">Alter Tiles</label><br><br>
+        <img id="buildTool" alt="Build Walls Button" style="width:50px; height:50px;" src="icons/hammer.png" title="Build Walls" class="notClicked" onclick="changeBtn(event)">
+        <img id="buildLowTool" alt="Build Low Barrier Button" style="width:50px; height:50px;" src="icons/low.png" title="Build Low Barrier" class="notClicked" onclick="changeBtn(event)">
+        <img id="buildMedTool" alt="Build Medium Barrier Button" style="width:50px; height:50px;" src="icons/medium.png" title="Build Medium Barrier" class="notClicked" onclick="changeBtn(event)">
+        <img id="buildHighTool" alt="Build High Barrier Button" style="width:50px; height:50px;" src="icons/high.png" title="Build High Barrier" class="notClicked" onclick="changeBtn(event)">
+        <img id="removeTool" alt="Remove Tool Button" style="width:50px; height:50px;" src="icons/pick.png" title="Remove Tile" class="notClicked" onclick="changeBtn(event)">
+    </div>
+    
+    <div class="menuPanel">
+        <label class="menuLabel">Clear Table</label><br><br>
+        <button class="clearBtn" onclick=clearTable(true)>Clear Paths</button> <br>
+        <button class="clearBtn" onclick=clearTable(false)>Clear All</button>
+    </div>
+    
+    <button class="animateButton" onclick=startAlgorithm()>Animate</button>
+    <!-- Allow walls to be drawn -->
+
+    </div> <br>
+    <script src="table.js" type="module"></script>
+</body>
+</html>
