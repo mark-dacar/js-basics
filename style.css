@@ -33,7 +33,7 @@ table {
 }
 
 .menuLabel {
-    font-size: 30px;
+    font-size: 20px;
     border-bottom-style:solid;
     border-bottom-width:3px;
 }
@@ -57,7 +57,7 @@ table {
 }
 
 body {
-    padding:20px;
+    padding:10px;
     background-color:paleturquoise;
 }
 
