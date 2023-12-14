@@ -73,7 +73,7 @@ h2 {
 
 .animateButton {
     padding: 15px;
-    padding-top: 75px;
+    margin-top: 75px;
     border-style: outset;
     border-width: 5px;
     font-size: 30px;
