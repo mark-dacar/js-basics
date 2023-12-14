@@ -72,8 +72,6 @@ h2 {
 }
 
 .animateButton {
-    display: flex;
-    align-items: center;
     padding: 15px;
     padding-top: 75px;
     border-style: outset;
